@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --black: #171412;
+  --white: #f1ebe4;
+  --gray: #c7c9d1;
+  --container: #2c2b3c;
+}
+body,
+header,
+main,
+aside {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-inline: auto;
+}
+h1 {
+  font-size: 50px;
+}
+
+body {
+  background-color: var(--container);
+  color: var(--white);
+  flex-direction: column;
+  border: solid 5px var(--gray);
+  border-radius: 10px;
+  max-width: 425px;
+}
+/* ---------------
+!!!! Style !!! 
+------------------*/
+input,
+button {
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 5px 10px;
+}
+/* ---------------
+!!!! Main !!! 
+------------------*/
+main {
+  margin-top: 20px;
+}
+/* ---------------
+!!!! button !!! 
+------------------*/
