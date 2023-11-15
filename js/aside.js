@@ -17,7 +17,7 @@ const updateLocalStorage = () => {
   const todoTextEl = document.getElementById('todoText')
   const todoFormError = document.getElementById("todo-form-error")
   const todoItemEl = document.getElementById("todoitem")
-  const todoItemCompleted = document.getElementById("todoitem-completed")
+  const todoItemCompleted = document.getElementById("todoitemcompleted")
   const buttonAsc = document.getElementById("sort-asc")
   const buttonDesc = document.getElementById("sort-desc")
 
@@ -25,6 +25,10 @@ const updateLocalStorage = () => {
 
   const handleForm = (event) => {
     todoFormEl.addEventListener("submit", handleForm)
+
+    const displayTodoList = () => {
+      todoItemEl.innerHTML = ""
+      todoItemEl.todoItemEl.todoItemCompleted = ""
 
     todoArray.forEach((todoItemEl) => {
 
