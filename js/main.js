@@ -18,3 +18,5 @@ function addlist(list) {
   para.innerText = list;
   todo.appendChild(para);
 }
+
+export { input, button, todo };

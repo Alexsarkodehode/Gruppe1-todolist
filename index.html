@@ -6,16 +6,17 @@
     <title>Todo list</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/aside.css" />
-    <script src="./js/main.js" defer></script>
-    <script src="./js/aside.js" defer></script>
+    <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
     <header><h2>Todo list</h2></h>
     <main>
+      <section>
       <input type="text" id="input" />
       <button id="add">Add</button>
+      </section>
+      <section id="todo"></section>
     </main>
-    <section id="todo"></section>
     <aside></aside>
   </body>
 </html>
