@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo list</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <script  href="./js/header.js" defer></script>
     <script  href="./js/aside.js" defer></script>
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
-    <header><h2>Todo list</h2></h>
+    <header>
+      <h1>Todo list</h1>
+      <nav>
+        <div class="stick" id="stick-1"></div>
+        <div class="stick" id="stick-2"></div>
+        <div class="stick" id="stick-3"></div>
+      </nav>
     <main>
       <section>
       <input type="text" id="input" />
@@ -17,6 +24,6 @@
       </section>
       <section id="todo"></section>
     </main>
-    <aside></aside>
+    <aside><h2></h2></aside>
   </body>
 </html>
