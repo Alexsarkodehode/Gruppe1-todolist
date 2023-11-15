@@ -1,3 +1,4 @@
+import { todo, button, input } from "./main.js";
 //////
 //////
 //////File1
@@ -100,3 +101,5 @@ todoFormEl.addEventListener("submit", handleForm);
 todoArray.forEach((todoItem) => {
   createTodoElement(todoItem);
 });
+
+export {};

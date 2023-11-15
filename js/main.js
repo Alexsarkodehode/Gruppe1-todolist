@@ -27,3 +27,4 @@ function addlist(list) {
   todo.appendChild(para);
   localStorage.setItem("todoList", JSON.stringify);
 }
+export { todo, button, input, addlist };
