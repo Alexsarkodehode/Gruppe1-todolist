@@ -1,4 +1,3 @@
-import { todo, button, input } from "./main.js";
 
 const localStorageKey = "Gruppe1todolist"
 
@@ -40,5 +39,14 @@ const updateLocalStorage = () => {
   
 }
 
+displayTodoList()
 
-export {};
+buttonAsc.addEventListener("", () => {
+  todoArray.sortarray(todoArray, "ASC")
+  displayTodoList()
+})
+
+buttonDesc.addEventListener("click", () => {
+  todoArray.sortArray(todoArray, "DESC")
+  dislayTodoList()
+})
