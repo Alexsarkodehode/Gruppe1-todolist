@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo list</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <script  src="./js/header.js" defer></script>
-    <script  src="./js/aside.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/aside.js" defer></script>
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
@@ -17,13 +17,21 @@
         <div class="stick" id="stick-2"></div>
         <div class="stick" id="stick-3"></div>
       </nav>
+    </header>
     <main>
       <section>
-      <input type="text" id="input" />
-      <button id="add">Add</button>
+        <input type="text" id="input" />
+        <button id="add">Add</button>
       </section>
       <section id="todo"></section>
     </main>
-    <aside><h2></h2></aside>
+    <aside>
+      <h2>Pending todos</h2>
+      <button id="sort-asc">Sort Asc</button
+      ><button id="sort-desc">Sort Desc</button>
+      <div id="todoitem"></div>
+      <h2>Completed todos</h2>
+      <div id="todoitem-completed"></div>
+    </aside>
   </body>
 </html>
