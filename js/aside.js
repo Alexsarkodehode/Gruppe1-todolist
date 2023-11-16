@@ -28,7 +28,7 @@ const updateLocalStorage = () => {
 
     const displayTodoList = () => {
       todoItemEl.innerHTML = ""
-      todoItemEl.todoItemEl.todoItemCompleted = ""
+      todoItemCompleted.innerHtml = ""
 
     todoArray.forEach((todoItemEl) => {
 
