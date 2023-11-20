@@ -1,17 +1,33 @@
+const localStorageKey = "Gruppe1todolistproject"
+let todoArray = JSON.parse(localStorage.getITem(localStorageKey))
+const updateLocalStorage = () =>
+localStorage.setITem(localtorageKey, JSON.stringify(todoArray))
 
-const localStorageKey = "Gruppe1todolist"
-
-const updateLocalStorage = () => {
-  const removeTodo = (id) => {
-    todoArray = todoArray-filter((ExistingTodoItem) ExistingTodoItem.id !== id)
+const removeTodo = (id) => {
+    todoArray = todoArray.filter((existingTodoITem) => existingTodoITem.id !== id)
     console.log(todoArray)
     updateLocalStorage()
-  }
-  const addTodo = (todoItem) => {
+}
+const addTodo = (todoItem) => {
+    const newTodoObject = {
+        name: todoItem,
+        id: Date.now(),
+        isCompleted: false
+    }
+    todoArray.push(newTodoObject)
     updateLocalStorage()
+
     console.log(todoArray)
-    return newToDoObject
-  }
+    return newTodoObject
+}
+const updateTodo = (todoId) => {
+    todoArray = todoArray.map((todoItem) => {
+        if(todoItem.id === todoId) todoItem.isCompleted = true
+        return todoItem
+    })
+    updateLocalStorage()
+}
+
 
 }
   const todoTextEl = document.getElementById('todoText')
@@ -52,5 +68,5 @@ buttonAsc.addEventListener("", () => {
 
 buttonDesc.addEventListener("click", () => {
   todoArray.sortArray(todoArray, "DESC")
-  dislayTodoList()
+  displayTodoList()
 })
