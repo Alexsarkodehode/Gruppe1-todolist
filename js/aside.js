@@ -1,7 +1,7 @@
 const localStorageKey = "Gruppe1todolistproject"
 let todoArray = JSON.parse(localStorage.getITem(localStorageKey))
 const updateLocalStorage = () =>
-localStorage.setITem(localtorageKey, JSON.stringify(todoArray))
+localStorage.setITem(localStorageKey, JSON.stringify(todoArray))
 
 const removeTodo = (id) => {
     todoArray = todoArray.filter((existingTodoITem) => existingTodoITem.id !== id)
