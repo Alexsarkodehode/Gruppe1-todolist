@@ -5,12 +5,10 @@ let input = document.querySelector("#input");
 //local storage
 /* const localStorageKey="groupProject"
 let todoList=JSON.parse(localStorage.getItem(localStorageKey))  ||  [] */
+localStorage.setItem("todoList", JSON.stringify);
 
 //create a todo array helps to add and delete from storage easily
 let todoList = [];
-
-const updateLocalStorage = () =>
-  localStorage.setItem(localStorageKey, JSON.stringify(todoList));
 
 //add eventlistener for button element
 
@@ -25,6 +23,8 @@ function addlist(list) {
   let para = document.createElement("p");
   para.innerText = list;
   todo.appendChild(para);
-  localStorage.setItem("todoList", JSON.stringify);
+  para.addEventListener("dblclick", () => {
+    todo.removeChild(para);
+    remove(list);
+  });
 }
-export { todo, button, input, addlist };

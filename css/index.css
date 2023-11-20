@@ -1,166 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 /* ----------------
 !!!! André !!!! 
 ----------------*/
 header {
   display: flex;
-  justify-content: space-around;
-}
-nav {
-  width: 80px;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+}
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 50px;
 }
-
-.stick {
-  width: 80px;
-  height: 8px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  background-color: #2dfdb9;
-  display: inline-block;
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
 }
-.stick:last-child {
-  margin-bottom: 0px;
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 7px);
 }
-#stick-1.open {
-  animation: stick-1-open 0.6s ease-out forwards;
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-8px, -8px);
 }
-#stick-2.open {
-  animation: stick-2-open 0s linear forwards;
-}
-#stick-3.open {
-  animation: stick-3-open 0.6s linear forwards;
-}
-/* Dot Animason */
-@keyframes stick-1-open {
-  0% {
-    width: 80px;
-  }
-  40% {
-    background-color: #ff1456;
-    width: 8px;
-    transform: translate(40px, 0px);
-  }
-  75%,
-  80% {
-    width: 8px;
-    transform: translate(40px, -50px);
-    animation-timing-function: cubic-bezier(0, 1, 1, 1);
-  }
-  100% {
-    background-color: #ff1456;
-    width: 8px;
-    transform: translate(35px, 46px);
-  }
-}
-@keyframes stick-2-open {
-  80% {
-    background-color: #2dfdb9;
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-  100% {
-    background-color: #ff1456;
-    transform: translate(8px, -23px) rotate(-40deg);
-  }
-}
-#stick-1.close {
-  width: 8px;
-  transform: translate(27px, 26px);
-  animation: stick-1-close 0.6 ease-out forwards;
-}
-#stick-2.close {
-  transform: translate(0px, 0px) rotate(40deg);
-  animation: stick-2-close 0.6 ease-out forwards;
-}
-#stick-3.close {
-  transform: translate(0px, -23px) rotate(-40deg);
-  animation: stick-3-close 0.6 ease-out forwards;
-}
-@keyframes stick-1-close {
-  0%,
-  70% {
-    width: 0px;
-  }
-  100% {
-    width: 80px;
-    transform: translate(0, 0);
-  }
-}
-@keyframes stick-2-close {
-  0% {
-    background-color: #ff1456;
-    width: 80px;
-  }
-  20% {
-    background-color: #ff1456;
-    width: 8px;
-    transform: translate(0, -23px) rotate(-40deg);
-  }
-  40% {
-    background-color: #2dfdb9;
-    width: 0px;
-  }
-  65% {
-    transform: translate(0, -70px);
-    animation-timing-function: cubic-bezier(0, 1, 1, 1);
-  }
-  80% {
-    width: 0px;
-  }
-  100% {
-    width: 80px;
-    transform: translate(0, 0px);
-  }
-}
-@keyframes stick-3-close {
-  0% {
-    background-color: #ff1456;
-    width: 80px;
-  }
-  20% {
-    background-color: #ff1456;
-    width: 8px;
-    transform: translate(0, -23px) rotate(-40deg);
-  }
-  40% {
-    background-color: #2dfdb9;
-  }
-  65% {
-    transform: translate(0, -93px);
-    animation-timing-function: cubic-bezier(0, 1, 1, 1);
-  }
-  90% {
-    whidth: 8px;
-  }
-  100% {
-    width: 80px;
-    transform: translate(0, 0px);
-  }
+.hamburger.hamburger.is-active .bar {
+  opacity: 0;
 }
 
 /* ----------------
 !!!! Ilakia !!!!
 -------------------- */
 body {
-  height: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   margin: 20px;
   background-color: rgb(188, 139, 139);
+  border-radius: 10px;
   padding: 30px;
-}
-
-#container,
-h1 {
-  display: flex;
-  justify-content: center;
 }
 
 #input {
@@ -169,9 +65,9 @@ h1 {
   margin-top: 30px;
   height: 2.5em;
   width: 250px;
-  padding: left 20px;
+  padding-left: 20px;
 }
-button {
+.btn {
   margin: 20px;
   border-style: solid;
   background-color: aquamarine;
@@ -183,7 +79,7 @@ button {
   border: none;
   color: black;
 }
-button:hover {
+.btn:hover {
   color: aqua;
 }
 #todo {
@@ -206,12 +102,12 @@ button:hover {
 
 #todo-form-error {
   color: red;
-  min-height: 1rem;
+  min-height: 5px;
 }
 
 .todo-item {
   background-color: #ccc;
-  min-height: 1rem;
+  min-height: 5px;
   display: flex;
   justify-content: space-between;
 }

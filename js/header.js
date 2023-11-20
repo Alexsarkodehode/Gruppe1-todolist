@@ -1,8 +1,7 @@
-/* get document from html */
-$(document).ready(function () {
-  $("nav").click(function () {
-    $(".stick").toggleClass(function () {
-      return $(this).is(".open, .close") ? "open close" : "open";
-    });
-  });
+// Hamburger menu
+
+const navBtn = document.querySelector(".hamburger");
+
+navBtn.addEventListener("click", function () {
+  navBtn.classList.toggle("is-active");
 });

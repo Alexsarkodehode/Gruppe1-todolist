@@ -6,6 +6,8 @@ Alexander:
 
 Ilakia:
 
+I work on todo list add, html,css and javascript with local storage
+
 <!-- ---------------------
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 ------------------------- -->
