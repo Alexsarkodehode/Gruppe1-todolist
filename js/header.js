@@ -1,7 +1,9 @@
 // Hamburger menu
 
-const navBtn = document.querySelector(".hamburger");
+const navBtnEl = document.querySelector(".hamburger");
+const navbarEl = document.querySelector(".navbar");
 
-navBtn.addEventListener("click", function () {
-  navBtn.classList.toggle("is-active");
+navBtnEl.addEventListener("click", function () {
+  navBtnEl.classList.toggle("is-active");
+  navbarEl.classList.toggle("is-active");
 });

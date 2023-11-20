@@ -22,3 +22,4 @@ André:
       -morkt on inport and export.
       -helpd on understanding new files.
       -added temproary aside.js inn html.
+      -Added animation to the nav menu.
