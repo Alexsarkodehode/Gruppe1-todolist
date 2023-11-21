@@ -5,11 +5,13 @@ let input = document.querySelector("#input");
 //local storage
 /* const localStorageKey="groupProject"
 let todoList=JSON.parse(localStorage.getItem(localStorageKey))  ||  [] */
-localStorage.setItem("todoList", JSON.stringify);
 
 //create a todo array helps to add and delete from storage easily
 let todoList = [];
-
+window.onload = () => {
+  todoList = JSON.parse(localStorage.getItem("todoList")) || [];
+  todoList.forEach((todoList) => addlist(todoList));
+};
 //add eventlistener for button element
 
 button.addEventListener("click", () => {
@@ -23,8 +25,8 @@ function addlist(list) {
   let para = document.createElement("p");
   para.innerText = list;
   todo.appendChild(para);
+  localStorage.setItem("todoList", JSON.stringify(todoList));
   para.addEventListener("dblclick", () => {
     todo.removeChild(para);
-    remove(list);
   });
 }
