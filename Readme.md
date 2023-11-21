@@ -23,3 +23,5 @@ André:
       -helpd on understanding new files.
       -added temproary aside.js inn html.
       -Added animation to the nav menu.
+      - maid nav menu
+        -problem fixing nav menu after inplementing others code.
