@@ -50,12 +50,10 @@ header {
   position: fixed;
   display: block;
   min-height: 100vh;
-  width: 100%;
+  width: 50%;
   top: 0;
-  left: 100%;
-  z-index: 98;
+  left: 500%;
   text-align: center;
-  background-color: #8a1e1e;
   padding-top: 120px;
   transition: 0, 4s;
 }
@@ -64,7 +62,7 @@ header {
 }
 .navbar a {
   display: block;
-  width: 100%;
+  width: 30%;
   max-width: 200px;
   margin: 0px auto 16px;
   text-align: center;
@@ -142,3 +140,4 @@ body {
   display: flex;
   justify-content: space-between;
 }
+/* tes test */
