@@ -1,5 +1,6 @@
 Alexander:
-
+Made repository for the team
+made Completed part 
 <!-- ---------------------
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 ------------------------- -->
