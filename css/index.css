@@ -8,7 +8,7 @@
 ----------------*/
 header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
 .hamburger {
@@ -30,7 +30,7 @@ header {
   display: block;
   width: 100%;
   height: 5px;
-  background-color: rgb(255, 204, 127);
+  background-color: #ffeba7;
   margin: 6px 0px;
   transition: 0.4s;
 }
@@ -50,17 +50,19 @@ header {
   position: fixed;
   display: block;
   width: 20%;
+  left: 100%;
   height: 250px;
   top: 0;
   text-align: center;
   transition: 0, 4s;
 }
 .navbar.is-active {
-  position: fixed;
-  margin-top: 150px;
-  left: 150px;
-  background-color: black;
+  margin-top: 100px;
+  left: 305px;
+  background-color: lightgray;
   padding-top: 5px;
+  max-width: 10%;
+  border-radius: 5px;
 }
 .navbar a {
   display: block;
@@ -73,6 +75,9 @@ header {
 }
 .navbar a:hover {
   background-color: rgb(45, 138, 64);
+}
+#dev-git {
+  font-weight: bolder;
 }
 /* ----------------
 !!!! Ilakia !!!!
@@ -92,7 +97,6 @@ main,
 aside {
   width: 400px;
   background-color: aquamarine;
-  padding: 30px;
 }
 
 body {
