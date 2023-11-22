@@ -1,3 +1,5 @@
+import {aside} from "./js/aside.js";
+
 let todo = document.querySelector("#todo");
 let button = document.querySelector("#add");
 let input = document.querySelector("#input");
@@ -28,3 +30,4 @@ function addlist(list) {
   localStorage.setItem("todoList", JSON.stringify);
 }
 export { todo, button, input, addlist };
+console.log(aside)

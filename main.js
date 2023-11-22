@@ -1,3 +1,5 @@
+import {aside} from "./js/aside";
+
 let todo=document.querySelector('#todo');
 let button=document.querySelector('#add');
 let input=document.querySelector('#input');
@@ -35,3 +37,4 @@ function addlist(list){
     })
    
 }
+console.log(aside);
