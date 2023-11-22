@@ -1,5 +1,5 @@
 const localStorageKey = "Gruppe1todolistproject"
-let todoArray = JSON.parse(localStorage.getITem(localStorageKey))
+let todoArray = JSON.parse(localStorage.getIem(localStorageKey))
 const updateLocalStorage = () =>
 localStorage.setITem(localStorageKey, JSON.stringify(todoArray))
 
@@ -29,18 +29,14 @@ const updateTodo = (todoId) => {
 }
 
 
-}
-  const todoTextEl = document.getElementById('todoText')
-  const todoFormError = document.getElementById("todo-form-error")
+  
   const todoItemEl = document.getElementById("todoitem")
   const todoItemCompleted = document.getElementById("todoitemcompleted")
   const buttonAsc = document.getElementById("sort-asc")
   const buttonDesc = document.getElementById("sort-desc")
 
-  const displayError = (errorMsg) => todoFormError.textContent = errorMsg
-
   const handleForm = (event) => {
-    todoFormEl.addEventListener("submit", handleForm)
+    todoFormEl.addEventListener("click", handleForm) 
 
     const displayTodoList = () => {
       todoItemEl.innerHTML = ""
@@ -70,3 +66,19 @@ buttonDesc.addEventListener("click", () => {
   todoArray.sortArray(todoArray, "DESC")
   displayTodoList()
 })
+
+
+function sortArray(array, sortOrder = "ASC", sortBy = "name") {
+  // create a copy of the array to avoid sorting the original array
+  const newArray = [...array]
+  if (sortOrder === "ASC") sortOrder = 1
+  else sortOrder = -1
+
+  newArray.sort((a, b) => {
+    if (a[sortBy] < b[sortBy]) return -1 * sortOrder
+    else if (a[sortBy] > b[sortBy]) return 1 * sortOrder
+
+    return 0
+  })
+
+

@@ -56,12 +56,8 @@ button:hover {
 /* ----------------
 !!!! Alexander !!!! */
 
-#todo-form-error {
-  color: red;
-  min-height: 1rem;
-}
 
-.todo-item {
+.todoitem {
   background-color: #ccc;
   min-height: 1rem;
   display: flex;
