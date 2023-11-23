@@ -26,7 +26,7 @@ function addlist(list) {
   para.innerText = list;
   todo.appendChild(para);
   localStorage.setItem("todoList", JSON.stringify(todoList));
-  para.addEventListener("dblclick", () => {
+  para.addEventListener("click", () => {
     todo.removeChild(para);
   });
 }
