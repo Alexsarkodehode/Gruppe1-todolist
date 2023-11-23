@@ -10,30 +10,38 @@
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <h1>Todo list</h1>
-      <section>
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
+      <section id="header-nav">
+        <h1>Todo list</h1>
+        <section id="header-nav">
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </section>
+        <!-- Nav -->
+        <nav class="navbar">
+          <p id="dev-git">Dev's Github</p>
+          <a id="alexander" href="#">Alexander</a>
+          <a id="andre" href="#">André</a>
+          <a id="ilakia" href="#">Ilakia</a>
+        </nav>
       </section>
-      <nav class="navbar">
-        <p id="dev-git">Dev's Github</p>
-        <a id="alexander" href="#">Alexander</a>
-        <a id="andre" href="#">André</a>
-        <a id="ilakia" href="#">Ilakia</a>
-      </nav>
     </header>
-    <main>
-      <section id="container">
+    <!-- Main -->
+    <main id="container">
+      <section>
         <input type="text" id="input" />
         <button id="add">Add</button>
-        <div id="todo"></div>
       </section>
+      <div id="todo"></div>
     </main>
+    <!-- Aside -->
     <aside>
-      <button class="btn" id="sort-asc">Sort Asc</button>
-      <button class="btn" id="sort-desc">Sort Desc</button>
+      <section>
+        <button class="btn" id="sort-asc">Sort Asc</button>
+        <button class="btn" id="sort-desc">Sort Desc</button>
+      </section>
       <div id="todoitem"></div>
       <h2>Completed todos</h2>
       <div id="todoitemcompleted"></div>

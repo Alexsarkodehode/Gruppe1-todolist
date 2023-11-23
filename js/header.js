@@ -24,23 +24,3 @@ andreGithub.addEventListener("click", function () {
 ilakiaGithub.addEventListener("click", function () {
   window.open("https://github.com/Ilakiab08", "_blanck");
 });
-
-// const githubBtn = {
-//   alex: query,
-//   andre: query,
-//   ilakia: query,
-// };
-// const githubLink = {
-//   alex: link,
-//   andre: link,
-//   ilakia: link,
-// };
-// githubBtn.alex.addEventListener("click", function () {
-//   window.open(githubLink.alex);
-// });
-// githubBtn.andre.addEventListener("click", function () {
-//   window.open(githubLink.andre);
-// });
-// githubBtn.ilakia.addEventListener("click", function () {
-//   window.open(githubLink.ilakia);
-// });
