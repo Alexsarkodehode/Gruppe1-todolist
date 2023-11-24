@@ -1,5 +1,5 @@
 Alexander:
-
+Made repository for the group. Completed todos. Added local storage.
 <!-- ---------------------
 !!!!!!!!!!!!!!!!!!!!!!!!!!
 ------------------------- -->
