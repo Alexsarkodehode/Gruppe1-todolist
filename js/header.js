@@ -10,17 +10,20 @@ navBtnEl.addEventListener("click", function () {
 /* ----------------------------
 !!!! Link to Deve's Github !!!!
 ----------------------------- */
-const alexanderGithub = document.querySelector("#alexander");
-const andreGithub = document.querySelector("#andre");
-const ilakiaGithub = document.querySelector("#ilakia");
+const githubs = {
+  alexanderGithub: document.querySelector("#alexander"),
+  andreGithub: document.querySelector("#andre"),
+  ilakiaGithub: document.querySelector("#ilakia"),
+};
 
-alexanderGithub.addEventListener("click", function () {
+githubs.alexanderGithub.addEventListener("click", function () {
   window.open("https://github.com/Alexsarkodehode", "_blank");
 });
 
-andreGithub.addEventListener("click", function () {
+githubs.andreGithub.addEventListener("click", function () {
   window.open("https://github.com/AndreK-B06", "_blank");
 });
-ilakiaGithub.addEventListener("click", function () {
+githubs.ilakiaGithub.addEventListener("click", function () {
   window.open("https://github.com/Ilakiab08", "_blanck");
 });
+//great use on btns

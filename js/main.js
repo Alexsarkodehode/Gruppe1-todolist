@@ -8,7 +8,7 @@ window.onload = () => {
   todoList = JSON.parse(localStorage.getItem("todoList")) || [];
   todoList.forEach((list) => addlist(list));
 };
-console.log(todo);
+
 //add eventlistener for button element
 
 button.addEventListener("click", () => {
@@ -24,10 +24,10 @@ function addlist(list) {
 
   todo.appendChild(para);
   localStorage.setItem("todoList", JSON.stringify(todoList));
-  para.addEventListener("dblclick", () => {
+  para.addEventListener("click", () => {
     todo.removeChild(para);
     remove(list);
-  });
+  }); // Removed as dblclick is not good for user friendliness /changes made by Leah after talking with emil. additional notes change from click entirely as click doesnt tell you it deletes use a button or a check box instead//
   function remove(list) {
     let index = todoList.indexOf(list);
     if (index > -1) {
@@ -37,20 +37,3 @@ function addlist(list) {
     localStorage.setItem("todoList", JSON.stringify(todoList));
   }
 }
-
-/* const makeElement = (type, properties) => {
-    const element = document.createElement(type)
-    // convert the properties object into a (key-value pair) array: 
-    const propertyPairs = Object.entries(properties)
-    
-    propertyPairs.forEach(property => {
-      // destructure the property array:
-      const [propertyKey, propertyValue] = property
-  
-      element[propertyKey] = propertyValue
-    })
-  
-    return element
-  }  */
-/*const helloBtn = makeElement("button", {className: "helloBtn", textContent: "hello!", id: "btnId"});
-  document.body.append(helloBtn);*/
