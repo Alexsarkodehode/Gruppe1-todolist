@@ -6,7 +6,8 @@ Alexander:
 
 Ilakia:
 
-I work on todo list add, html,css and javascript with local storage
+I worked on todo list add, html,css and javascript with local storage
+doubleclick remove in browser and local storage.
 
 <!-- ---------------------
 !!!!!!!!!!!!!!!!!!!!!!!!!!
