@@ -127,8 +127,11 @@ header {
   border-radius: 5px;
 }
 .navbar.is-active,
-.navbar a {
+.navbar a,
+.btn,
+#add {
   color: var(--btn-Text);
+  box-shadow: #121419 0px 0px 5px;
 }
 .navbar a {
   display: block;
@@ -137,6 +140,7 @@ header {
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
+  margin-top: 20px;
 }
 #dev-git {
   font-weight: bolder;
