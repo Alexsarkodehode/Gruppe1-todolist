@@ -6,8 +6,7 @@ Alexander:
 
 Ilakia:
 
-I worked on todo list add, html,css and javascript with local storage
-doubleclick remove in browser and local storage.
+I worked on todo list add, html,css and javascript with local storage doubleclick remove in browser and local storage. main.js style.css index.html
 
 <!-- ---------------------
 !!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -96,6 +96,7 @@ header {
   margin: 6px 0px;
   transition: 0.4s;
 }
+/* Animasion */
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-8px, 7px);
 }
@@ -118,6 +119,7 @@ header {
   text-align: center;
   transition: 0, 4s;
 }
+/* "Drop-down" menu */
 .navbar.is-active {
   margin-top: 100px;
   left: 430px;
@@ -133,6 +135,7 @@ header {
   color: var(--btn-Text);
   box-shadow: #121419 0px 0px 5px;
 }
+/* "Drop-down" menu button's */
 .navbar a {
   display: block;
   width: 100px;
