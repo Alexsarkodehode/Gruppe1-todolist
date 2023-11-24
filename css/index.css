@@ -11,11 +11,12 @@
 ----------------------*/
 :root {
   --Background: #f5e8ba;
-  --Background-app: aquamarine;
-  --Text: black;
+  --Background-app: #034e35;
+  --Text: #dbf2d5;
   --btn: #ffeba7;
   --btn-hover: #b4a676;
-  --btn-Text: #102770;
+  --btn-Text: #121419;
+  --nav-background: #e4e4d6;
 }
 .hamburger,
 #add,
@@ -43,6 +44,7 @@ main,
 aside {
   background-color: var(--Background-app);
   padding: 10px 20px;
+  color: var(--Text);
 }
 body {
   justify-content: center;
@@ -71,7 +73,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-/* Nav menu */
+/* Hamburger menu */
 .hamburger {
   position: relative;
   display: block;
@@ -118,15 +120,19 @@ header {
 }
 .navbar.is-active {
   margin-top: 100px;
-  left: 965px;
-  background-color: lightgray;
+  left: 430px;
+  background-color: var(--nav-background);
   padding-top: 5px;
-  max-width: 10%;
+  max-width: 20%;
   border-radius: 5px;
+}
+.navbar.is-active,
+.navbar a {
+  color: var(--btn-Text);
 }
 .navbar a {
   display: block;
-  width: 90px;
+  width: 100px;
   margin: auto auto 16px;
   text-align: center;
   padding: 12px 16px;

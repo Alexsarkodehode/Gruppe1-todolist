@@ -30,3 +30,4 @@ André:
     -Linked the group members' github with the buttons in the nav menu
     -Addet root.
     -Changed the css to be less repetitive after the implementation from the group's css
+    -changed som coler's
